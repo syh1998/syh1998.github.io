@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            margin:0 auto;
+        }
+        #banner-right{
+            position: absolute;
+            top:20px;
+            right:180px;
+            cursor: pointer;
+            font-size:36px;
+            color:red;
+        }
+        #header{
+            width: 1225px;
+            height: 222px;
+            margin: auto;
+            margin-top: 38px;
+        }
+        #nav ul{
+            width: 1224px;
+            height: 40px;
+            margin:0 auto;
+        }
+        #nav ul li{
+            list-style: none;
+            float: left;
+            width: 122px;
+            background-color: #e3393c;
+            margin-top:34px;
+            text-align:center;
+            line-height: 40px;
+            margin-bottom:43px;
+            cursor: pointer;
+        }
+        #banner{
+            width:1225px;
+            height:446px;
+            margin:0 auto;
+            margin-top: 20px;
+            position: relative;
+        }
+        #banner>ul>li{
+            display: none;
+        }
+        #banner ul .active{
+            display: block;
+        }
+        #banner #content{
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+        }
+        #banner #content ul{
+            margin-left:550px;
+        }
+        #banner #content li{
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            cursor:pointer;
+        }
+        #banner #content li span{
+            width: 20px;
+            height: 20px;
+            color:white;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 50%;
+            display: block;
+            background-color: #000;
+            margin-top:50px;
+            margin-right:5px;
+        }
+        #banner #content li .active-num{
+            background-color:#c81623;
+        }
+        table{
+            width: 1214px;
+            height: 368px;
+            background-color: #fef4e8;
+            margin:0 auto;
+            text-align: center;
+            margin-top:100px;
+        }
+        tbody>tr>td:last-child{
+            color:red;
+        }
+        tfoot>tr>td:last-child{
+            color:red;
+        }
+        thead tr th{
+            padding-top:18px;
+        }
+    </style>
+</head>
+<body>
+<p id="banner-right" onclick="hide()">x</p>
+<div id="header">
+    <img src="img/top.png">
+</div>
+<div id="nav">
+    <ul>
+        <li>电脑办公</li>
+        <li>生活电器</li>
+        <li>手机通讯</li>
+        <li>大家电</li>
+        <li>智能数码</li>
+        <li>饮料酒水</li>
+        <li>家居家装</li>
+        <li>母婴童装</li>
+        <li>食品生鲜</li>
+        <li>个护家清</li>
+    </ul>
+</div>
+<div id="banner">
+    <ul>
+        <li class="active">
+            <img src="img/banner1.jpg">
+        </li>
+        <li>
+            <img src="img/banner2.jpg">
+        </li>
+    </ul>
+    <div id="content">
+        <ul>
+            <li>
+                <span class="active-num">1</span>
+            </li>
+            <li>
+                <span>2</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>商品</th>
+        <th>概述</th>
+        <th>单价</th>
+        <th>数量</th>
+        <th>小计</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><img src="img/product01.png"></td>
+        <td>华为HUAWEI nova 青春版 4GB+64GB樱语粉 移动联通电信4G手机</td>
+        <td>&yen;1789.00</td>
+        <td>
+            <button  onclick="add(this)">+</button>
+            <span>1</span>
+            <button  onclick="add(this)">-</button>
+        </td>
+        <td>&yen;1789.00</td>
+    </tr>
+    <tr>
+        <td><img src="img/product02.png"></td>
+        <td>vivo 全网通 2GB+16GB 移动联通电信4G手机 双卡双待 玫瑰金</td>
+        <td>&yen;1999.00</td>
+        <td>
+            <button  onclick="add(this)">+</button>
+            <span>1</span>
+            <button  onclick="add(this)">-</button>
+        </td>
+        <td>&yen;1999.00</td>
+    </tr>
+    <tr>
+        <td><img src="img/product03.png"></td>
+        <td>vivo Y67 全网通 4GB+32GB 移动联通电信4G手机 双卡双待 Y67A 玫瑰金</td>
+        <td>&yen;2199.00</td>
+        <td>
+            <button  onclick="add(this)">+</button>
+            <span>1</span>
+            <button  onclick="add(this)">-</button>
+        </td>
+        <td>&yen;2199.00</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">总计</td>
+        <td>&yen;5987</td>
+    </tr>
+    </tfoot>
+</table>
+<script>
+    var img=document.getElementById("header");
+    var p=document.getElementById("banner-right");
+    function hide(){
+        img.style.display="none";
+        p.style.display="none";
+    }
+
+
+
+
+
+    var li=document.getElementById("nav").children[0].children;
+    for(var i=0;i<li.length;i++){
+        li[i].onmouseover=function(){
+            this.style.background="#fff";
+        };
+        li[i].onmouseleave=function(){
+            this.style.background="#e3393c";
+        }
+    }
+
+
+
+
+
+
+
+    var lis=document.getElementById("banner").firstElementChild.children;
+    var content=document.getElementById("content").firstElementChild.children;
+    var banner=document.getElementById("banner");
+    var i=0;
+    var timer;
+    function run(){
+        timer=setInterval(function(){
+            lis[i].removeAttribute("class");
+            content[i].firstElementChild.removeAttribute("class");
+            i++;
+            if(i>=lis.length){
+                i=0;
+            }
+            lis[i].setAttribute("class","active");
+            content[i].firstElementChild.setAttribute("class","active-num");
+        },2000);
+    }
+    run();
+
+    banner.onmouseover=function(){
+        clearInterval(timer);
+    };
+    banner.onmouseout=function(){
+        run();
+    };
+    for(var j=0;j<content.length;j++){
+        content[j].firstElementChild.setAttribute("num",j);
+        content[j].onmouseover=function(){
+            lis[i].removeAttribute("class");
+            content[i].firstElementChild.removeAttribute("class");
+            clearInterval(timer);
+            i=this.firstElementChild.getAttribute("num");
+            lis[i].setAttribute("class","active");
+            content[i].firstElementChild.setAttribute("class","active-num");
+        }
+    }
+
+
+
+
+
+
+
+    function add(btn){
+        var span=btn.parentElement.querySelector("span");
+        var n=parseInt(span.innerHTML);
+        if(btn.innerHTML=="+"){
+            n++
+        }else if(n>1){
+            n--
+        }else{
+            n=1
+        }
+        span.innerHTML=n;
+       var price=btn.parentElement.previousElementSibling.innerHTML.slice(1);
+        var subtotal=price*n;
+        btn.parentElement.nextElementSibling.innerHTML="&yen;"+subtotal.toFixed(2);
+        var cer=document.querySelectorAll("tbody tr td:last-child");
+        for(var i= 0,total=0;i<cer.length;i++){
+            total+=parseFloat(cer[i].innerHTML.slice(1));
+        }
+        document.querySelector("tfoot tr td:last-child")
+                .innerHTML ="&yen"+total.toFixed(2);
+   }
+
+
+</script>
+</body>
+</html>
