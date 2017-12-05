@@ -49,8 +49,8 @@ ul:after{
 	margin-top:5%;
 	margin-bottom: 5%;
 }
-h1:hover{
-	background-color:red;
+.dd h1:hover,.ee h1:hover{
+	color:red;
 }
 .div input:nth-of-type(1){
 	width: 70%;
