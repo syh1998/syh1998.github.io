@@ -49,9 +49,6 @@ ul:after{
 	margin-top:5%;
 	margin-bottom: 5%;
 }
-div h1:hover{
-	color:red;
-}
 .div input:nth-of-type(1){
 	width: 70%;
 	height: 55px;
