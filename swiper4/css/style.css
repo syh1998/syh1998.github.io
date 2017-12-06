@@ -30,3 +30,60 @@ body {
     margin-left:13.5px;
     transform:rotate(90deg);
 }
+/*第一屏样式*/
+
+.s1{
+    background:url("../img/bj.png");
+    height: 100%;
+    position: relative;
+}
+.header img:nth-of-type(1){
+    width: 30px;
+    position: absolute;
+    top:120px;
+    left:50px;
+}
+.header img:nth-of-type(2){
+    width: 60px;
+    position: absolute;
+    top:90px;
+    left:275px;
+}
+.header img:nth-of-type(3){
+    width: 50px;
+    position: absolute;
+    top:430px;
+    left:30px;
+}
+.header img:nth-of-type(4){
+    width: 50px;
+    position: absolute;
+    top:400px;
+    left:280px;
+}
+.header img:nth-of-type(5){
+    width:70%;
+    position: absolute;
+    margin-left: 35%;
+    left:25%;
+}
+.main img:nth-of-type(1){
+    width: 150px;
+    position: absolute;
+    top: 200px;
+    left: 111px;
+}
+.main img:nth-of-type(2){
+    width: 310px;
+    position: absolute;
+    top: 255px;
+    left:30px;
+}
+.ss1{
+    background:url("../img/9.png");
+    width:205px;
+    position: absolute;
+    top:350px;
+    left: 85px;
+
+}
