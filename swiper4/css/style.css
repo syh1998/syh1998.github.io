@@ -135,13 +135,15 @@ body .img{
     position: relative;
     font-size:26px;
 }
-.header1 h2::before{
+.header1 h2::before,.header1 h2::after{
     content:"";
-    background:url("../img/14.png");
     position: absolute;
     width: 80px;
     height: 20px;
     display: inline-block;
+}
+.header1 h2::before{
+    background:url("../img/14.png");
     background-size:contain;
     margin-left: -95px;
     margin-top: 10px;
@@ -164,46 +166,44 @@ body .img{
     font-size:14px;
     margin-top: 10px;
 }
+.main1 div{
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    left:50%;
+    margin-left: -40%;
+}
 .main1 img{
     position:absolute;
     width: 100%;
     left:0;
 }
-/*.header1 h2{*/
-    /*margin-top: 0;*/
-    /*margin-bottom:5px;*/
-/*}*/
-/*.header1 span{*/
-    /*letter-spacing: 5px;*/
-/*}*/
-/*.main1 .img3{*/
-    /*position: absolute;*/
-    /*left: 7%;*/
-    /*top: 25%;*/
-/*}*/
-/*.main1 div{*/
-    /*text-align: left;*/
-    /*background:radial-gradient(#03001f,#042538);*/
-    /*padding:26px;*/
-    /*opacity: 0.7;*/
-    /*margin:15px 30px;*/
-    /*font-size: 16px;*/
-/*}*/
-/*.main1 div p{*/
-    /*padding: 2px;*/
-    /*font-weight:bold;*/
-/*}*/
-/*.main1 span{*/
-    /*background:linear-gradient(#00e7f7,#00fd9d);*/
-    /*padding: 5px 30px;*/
-    /*border-radius:10px;*/
-    /*color:black;*/
-    /*font-weight: bold;*/
-    /*display: inline-block;*/
-    /*position: absolute;*/
-    /*bottom:20%;*/
-    /*right: 34%;*/
-/*}*/
+.main1 div p{
+    font-size:14px;
+   text-align: left;
+    line-height:24px;
+    padding: 0 10%;
+}
+.main1 div p:nth-of-type(1){
+    padding-top:20px;
+}
+.main1 span{
+    background: -moz-linear-gradient(left, #00ecfc, #00fd9d);
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d));
+    background: -webkit-linear-gradient(left, #00ecfc, #00fd9d);
+    background: -o-linear-gradient(left, #00ecfc, #00fd9d);
+    border-radius:10px;
+    width: 120px;
+    height: 25px;
+    color:black;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    bottom:17%;
+    left: 50%;
+    margin-left: -60px;
+}
+
 
 /*
 *第三屏样式
