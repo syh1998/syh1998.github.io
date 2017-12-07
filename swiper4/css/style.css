@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html, body {
     position: relative;
     height: 100%;
@@ -34,7 +39,7 @@ body {
 *第一屏样式
 */
 
-.s1,.s2,.s3{
+.s1,.s2,.s3,.s4{
     background:url("../img/bj.png");
     height: 100%;
     position: relative;
@@ -91,22 +96,21 @@ body .img{
     color:black;
     background:url(../img/9.png);
     width:200px;
-    background-size:100%;
+    background-size:contain;
     position:absolute;
-    top:52%;
-    left:19%;
-    padding:2px 20px;
+    top:55%;
+    left:24%;
+    height: 24px;
     font-weight: bold;
 }
 .footer div{
     position: absolute;
-    bottom:15%;
-    left:18%;
+    bottom:18%;
+    width: 100%;
 }
 .footer div p{
     color:#117e7b;
     font-weight: bold;
-    margin: 0;
 }
 .footer img{
     position:absolute;
@@ -123,7 +127,7 @@ body .img{
 /*
 *第二屏样式
 */
-.s2,.s3{
+.s2,.s3,.s4{
     color:#03f3cc;
     position: relative;
 }
@@ -169,7 +173,7 @@ body .img{
     font-weight: bold;
     display: inline-block;
     position: absolute;
-    bottom:16%;
+    bottom:20%;
     right: 34%;
 }
 
@@ -185,7 +189,6 @@ body .img{
     position: absolute;
 }
 .main2 span:nth-of-type(1){
-    width:10%;
     top:170px;
     left: 90px;
 }
@@ -217,5 +220,5 @@ body .img{
 .footer .ss1{
     position: absolute;
     bottom:15%;
-    left:11%;
+    width: 100%;
 }
