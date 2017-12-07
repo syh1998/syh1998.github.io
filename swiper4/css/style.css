@@ -34,7 +34,7 @@ body {
 *第一屏样式
 */
 
-.s1,.s2{
+.s1,.s2,.s3{
     background:url("../img/bj.png");
     height: 100%;
     position: relative;
@@ -65,7 +65,7 @@ body .img{
 }
 .header img:nth-of-type(4){
     width: 50px;
-    top:400px;
+    top:420px;
     right:50px;
 }
 .header img:nth-of-type(5){
@@ -93,7 +93,7 @@ body .img{
     width:200px;
     background-size:100%;
     position:absolute;
-    top:51%;
+    top:52%;
     left:19%;
     padding:2px 20px;
     font-weight: bold;
@@ -101,16 +101,17 @@ body .img{
 .footer div{
     position: absolute;
     bottom:15%;
-    left:20%;
+    left:18%;
 }
 .footer div p{
     color:#117e7b;
     font-weight: bold;
+    margin: 0;
 }
 .footer img{
     position:absolute;
     bottom:0;
-    height: 70px;
+    height:70px;
 }
 .footer img:nth-of-type(1){
     left:-15%;
@@ -122,9 +123,12 @@ body .img{
 /*
 *第二屏样式
 */
-.s2{
-    color:#117e7b;
-    padding-top: 70px;
+.s2,.s3{
+    color:#03f3cc;
+    position: relative;
+}
+.header1 h2{
+    padding-top:70px;
 }
 .header1 .img1{
     padding-right: 25px;
@@ -140,14 +144,22 @@ body .img{
 .header1 span{
     letter-spacing: 5px;
 }
+.main1 .img3{
+    position: absolute;
+    left: 7%;
+    top: 25%;
+}
 .main1 div{
     text-align: left;
     background:radial-gradient(#03001f,#042538);
-    padding:33px 25px;
+    padding:26px;
     opacity: 0.7;
-    margin:25px 30px;
-    margin-bottom:0;
+    margin:15px 30px;
     font-size: 16px;
+}
+.main1 div p{
+    padding: 2px;
+    font-weight:bold;
 }
 .main1 span{
     background:linear-gradient(#00e7f7,#00fd9d);
@@ -156,4 +168,54 @@ body .img{
     color:black;
     font-weight: bold;
     display: inline-block;
+    position: absolute;
+    bottom:16%;
+    right: 34%;
+}
+
+/*
+*第三屏样式
+*/
+.main2 span{
+    border-radius:50%;
+    background:radial-gradient(#000e2b,#045568);
+    padding:20px 15px;
+    opacity: 0.8;
+    font-weight:bold;
+    position: absolute;
+}
+.main2 span:nth-of-type(1){
+    width:10%;
+    top:170px;
+    left: 90px;
+}
+.main2 span:nth-of-type(2){
+     top:170px;
+     right: 90px;
+ }
+.main2 span:nth-of-type(3){
+    top:290px;
+    left: 20px;
+}
+.main2 span:nth-of-type(4){
+    top:290px;
+    right: 30px;
+}
+.main2 span:nth-of-type(5){
+    top: 410px;
+    left: 90px;
+}
+.main2 span:nth-of-type(6){
+    top: 410px;
+    right: 90px;
+}
+.main2 span:nth-of-type(7){
+    padding:45px 20px;
+    left:130px;
+    top:256px;
+}
+.footer .ss1{
+    position: absolute;
+    bottom:15%;
+    left:11%;
 }
