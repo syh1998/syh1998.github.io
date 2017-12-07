@@ -129,53 +129,81 @@ body .img{
 */
 .s2,.s3,.s4,.s4,.s5,.s6,.s7{
     color:#03f3cc;
-    position: relative;
 }
 .header1 h2{
     padding-top:70px;
+    position: relative;
+    font-size:26px;
 }
-.header1 .img1{
-    padding-right: 25px;
-}
-.header1 .img2{
-   margin-left: 25px;
-    transform: rotate(180deg);
-}
-.header1 h2{
-    margin-top: 0;
-    margin-bottom:5px;
-}
-.header1 span{
-    letter-spacing: 5px;
-}
-.main1 .img3{
+.header1 h2::before{
+    content:"";
+    background:url("../img/14.png");
     position: absolute;
-    left: 7%;
-    top: 25%;
-}
-.main1 div{
-    text-align: left;
-    background:radial-gradient(#03001f,#042538);
-    padding:26px;
-    opacity: 0.7;
-    margin:15px 30px;
-    font-size: 16px;
-}
-.main1 div p{
-    padding: 2px;
-    font-weight:bold;
-}
-.main1 span{
-    background:linear-gradient(#00e7f7,#00fd9d);
-    padding: 5px 30px;
-    border-radius:10px;
-    color:black;
-    font-weight: bold;
+    width: 80px;
+    height: 20px;
     display: inline-block;
-    position: absolute;
-    bottom:20%;
-    right: 34%;
+    background-size:contain;
+    margin-left: -95px;
+    margin-top: 10px;
 }
+.header1 h2::after{
+    content:"";
+    background:url("../img/13.png");
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+    background-size:contain;
+    margin-left:68px;
+    margin-top: 80px;
+    top:0;
+}
+.header1 h2 small{
+    display:block;
+    letter-spacing: 5px;
+    font-size:14px;
+    margin-top: 10px;
+}
+.main1 img{
+    position:absolute;
+    width: 100%;
+    left:0;
+}
+/*.header1 h2{*/
+    /*margin-top: 0;*/
+    /*margin-bottom:5px;*/
+/*}*/
+/*.header1 span{*/
+    /*letter-spacing: 5px;*/
+/*}*/
+/*.main1 .img3{*/
+    /*position: absolute;*/
+    /*left: 7%;*/
+    /*top: 25%;*/
+/*}*/
+/*.main1 div{*/
+    /*text-align: left;*/
+    /*background:radial-gradient(#03001f,#042538);*/
+    /*padding:26px;*/
+    /*opacity: 0.7;*/
+    /*margin:15px 30px;*/
+    /*font-size: 16px;*/
+/*}*/
+/*.main1 div p{*/
+    /*padding: 2px;*/
+    /*font-weight:bold;*/
+/*}*/
+/*.main1 span{*/
+    /*background:linear-gradient(#00e7f7,#00fd9d);*/
+    /*padding: 5px 30px;*/
+    /*border-radius:10px;*/
+    /*color:black;*/
+    /*font-weight: bold;*/
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*bottom:20%;*/
+    /*right: 34%;*/
+/*}*/
 
 /*
 *第三屏样式
@@ -221,4 +249,20 @@ body .img{
     position: absolute;
     bottom:15%;
     width: 100%;
+}
+
+/*
+*第四屏样式
+*/
+.main3 span:nth-of-type(1){
+    color:#00bcf6;
+}
+.main3 span:nth-of-type(2){
+    color:#00bcf6;
+}
+.main3 span:nth-of-type(3){
+    color:#00bcf6;
+}
+.main3 span:nth-of-type(4){
+    color:#00bcf6;
 }
