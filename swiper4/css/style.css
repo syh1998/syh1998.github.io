@@ -225,31 +225,38 @@ body .img{
 .main2 span:nth-of-type(1){
     top:170px;
     left: 90px;
+    animation: rubberBand infinite;
 }
 .main2 span:nth-of-type(2){
      top:170px;
      right: 90px;
+    animation: rubberBand infinite;
  }
 .main2 span:nth-of-type(3){
     top:290px;
     left: 20px;
+    animation: rubberBand infinite;
 }
 .main2 span:nth-of-type(4){
     top:290px;
     right: 30px;
+    animation: rubberBand infinite;
 }
 .main2 span:nth-of-type(5){
     top: 410px;
     left: 90px;
+    animation: rubberBand infinite;
 }
 .main2 span:nth-of-type(6){
     top: 410px;
     right: 90px;
+    animation: rubberBand infinite;
 }
 .main2 span:nth-of-type(7){
     padding:45px 20px;
     left:130px;
     top:256px;
+    animation:pulse infinite;
 }
 .footer .ss1{
     position: absolute;
