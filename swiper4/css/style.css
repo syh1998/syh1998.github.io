@@ -34,9 +34,22 @@ body {
     top:auto;
     bottom:0;
     margin-left:-13.5px;
-    transform:rotate(90deg);
+    transform:rotate(-90deg);
+    width: 17px;
+    height: 35px;
+    background-size:contain;
+    animation: buttonnext 2s infinite;
 }
-
+@keyframes buttonnext {
+    0%{
+        bottom:0;
+        opacity: 1;
+    }
+    100%{
+        bottom:5%;
+        opacity: 0;
+    }
+}
 /*音乐*/
 #mp3Btn{
     position: absolute;
@@ -88,25 +101,25 @@ body {
     width: 30px;
     top:120px;
     left:50px;
-    animation:tada infinite;
+    animation:swing infinite;
 }
 .header img:nth-of-type(2){
     width: 60px;
     top:90px;
     right:35px;
-    animation:tada infinite;
+    animation:swing infinite;
 }
 .header img:nth-of-type(3){
     width: 50px;
     top:430px;
     left:30px;
-    animation:tada infinite;
+    animation:swing infinite;
 }
 .header img:nth-of-type(4){
     width: 50px;
     top:420px;
     right:50px;
-    animation:tada infinite;
+    animation:swing infinite;
 }
 .header img:nth-of-type(5){
     width:70%;
@@ -114,6 +127,9 @@ body {
     left: 50%;
     margin-left:-35%;
     animation:pulse infinite;
+}
+.swing {
+    transform-origin:center;
 }
 .main img{
     position: absolute;
@@ -155,11 +171,28 @@ body {
 }
 .footer img:nth-of-type(1){
     left:-15%;
+    animation:footerimg1 3s infinite alternate;
 }
 .footer img:nth-of-type(2){
     left:-23%;
+    animation:footerimg2 3s infinite alternate;
 }
-
+@keyframes footerimg1 {
+    0%{
+        left:-15%;
+    }
+    100%{
+        left:-30%;
+    }
+}
+@keyframes footerimg2 {
+    0%{
+        left:-23%;
+    }
+    100%{
+        left:-40%;
+    }
+}
 /*
 *第二屏样式
 */
@@ -426,26 +459,185 @@ body {
     z-index:9999;
 }
 .main4 div div img{
-    position:relative;
+    position:absolute;
     width: 30%;
 }
-.main4 div div div{
+.main4 div div p{
     position:absolute;
+    font-size:14px;
+    font-weight:bold;
+}
+.main4 div div span{
+    position:absolute;
+    font-size:14px;
+    background: -moz-linear-gradient(left, #00ecfc, #00fd9d);
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d));
+    background: -webkit-linear-gradient(left, #00ecfc, #00fd9d);
+    background: -o-linear-gradient(left, #00ecfc, #00fd9d);
+    border-radius:10px;
+    color:black;
+    display:inline-block;
+    width: 97px;
+    height: 20px;
 }
 .main4 div:nth-of-type(1) div img {
     top:-175px;
+    left:11%;
 }
 .main4 div:nth-of-type(2) div img {
     top:-175px;
-    left:85px;
+   left:58%;
 }
 .main4 div:nth-of-type(3) div img {
    top:50px;
+    left:11%;
 }
 .main4 div:nth-of-type(4) div img {
     top:50px;
-    left:85px;
+    left:58%;
 }
 .main4 div:nth-of-type(1) div p {
+    top: -64px;
+    left:12%;
+}
+.main4 div:nth-of-type(1) div span {
+    top: -40px;
+    left:12%;
+}
+.main4 div:nth-of-type(2) div p {
+    top: -64px;
+    right:15%;
+}
+.main4 div:nth-of-type(2) div span {
+    top: -40px;
+    right:14%;
+}
+.main4 div:nth-of-type(3) div p {
+    top:164px;
+    left:12%;
+}
+.main4 div:nth-of-type(3) div span {
+    top:187px;
+    left:12%;
+}
+.main4 div:nth-of-type(4) div p {
+    top: 164px;
+    right:15%;
+}
+.main4 div:nth-of-type(4) div span {
+    top: 187px;
+    right:14%;
+}
 
+/*
+*第六屏
+*/
+.main5 div{
+    position: relative;
+    margin-top: 20px;
+}
+.main5 div div{
+    position: absolute;
+    height: 80px;
+    width: 280px;
+    background:url("../img/23.png");
+    background-size:contain;
+    left: 50%;
+    margin-left: -140px;
+    margin-top:35px;
+}
+.main5 div h3{
+   color:black;
+    background:url("../img/22.png");
+    width: 236px;
+    height: 24px;
+    background-size:contain;
+    position: absolute;
+    line-height: 24px;
+    font-size:16px;
+    text-align: left;
+    left:13%;
+    padding-left: 10px;
+}
+.main5 div div p{
+    font-size:14px;
+    text-align:left;
+    padding:4px 0 2px 6px;
+}
+.main5 div img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 4%;
+    top: -8px;
+}
+.main5 div s{
+    width: 1px;
+    height: 122px;
+    border-left:1px dashed #1beccc;
+    position: absolute;
+    left: 8%;
+    top: 14px;
+}
+.main5 div:nth-of-type(2){
+    top:140px;
+}
+.main5 div:nth-of-type(3){
+    top:280px;
+}
+
+/*
+*第七屏
+*/
+
+.main6 div{
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    left:50%;
+    margin-left: -40%;
+}
+.main6 img{
+    position:absolute;
+    width: 100%;
+    left:0;
+}
+.main6 div form{
+    position: absolute;
+    top:20px;
+}
+.main6 .required {
+     position: absolute;
+    top:8%;
+    color:red;
+    left: 8%;
+}
+/*.main6 form label{*/
+    /*position: absolute;*/
+    /*color:red;*/
+    /*left: 8%;*/
+/*}*/
+/*.main6 .required1 {*/
+    /*top:33%;*/
+/*}*/
+/*.main6 .required2 {*/
+    /*top:58%;*/
+/*}*/
+.main6 div form input{
+    width: 270px;
+    height: 60px;
+    border:1px solid #1beccc;
+    padding:15px;
+    margin-bottom: 12px;
+}
+.main6 div input:last-child{
+    background-color: #1beccc;
+    color:white;
+    font-size:16px;
+}
+.main6 div p{
+    position:absolute;
+    font-size:16px;
+   top:310px;
+    padding:0 20px;
 }
