@@ -389,6 +389,7 @@ body {
 .main3 .dv div p:nth-of-type(1) img{
     width:15px;
     margin-right: 10px;
+    animation:shake 100s infinite;
 }
 .main3 .dv div p:nth-of-type(1) span{
     color:white;
@@ -461,6 +462,7 @@ body {
 .main4 div div img{
     position:absolute;
     width: 30%;
+    animation:pulse 10s infinite ;
 }
 .main4 div div p{
     position:absolute;
