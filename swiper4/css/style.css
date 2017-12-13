@@ -600,12 +600,6 @@ body {
     position: absolute;
     top:20px;
 }
-.main6 .required {
-     position: absolute;
-    top:8%;
-    color:red;
-    left: 8%;
-}
 .main6 div form input{
     width: 270px;
     height: 60px;
