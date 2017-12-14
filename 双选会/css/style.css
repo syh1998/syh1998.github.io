@@ -236,11 +236,13 @@ body {
 }
 .s5 .img2{
     width: 70%;
-    bottom:14%;
+    bottom:22%;
     position: absolute;
     left: 50%;
     margin-left: -35%;
 }
-@media (min-width: 360px) {
-
+@media (max-width: 320px) {
+    .s5 .img2 {
+         bottom:14%;
+    }
 }
