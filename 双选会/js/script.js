@@ -15,9 +15,13 @@ var swiper = new Swiper('.swiper-container', {
         slideChangeTransitionEnd: function(){
             swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
         }
+    },
+    effect : 'flip',
+    flipEffect: {
+        slideShadows : true,
+        limitRotation : true,
     }
 });
-
 var mp3=document.querySelector("#mp3");
 var mp3Btn=document.querySelector("#mp3Btn");
 mp3Btn.onclick = function () {
