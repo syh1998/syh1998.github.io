@@ -3,6 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
+li{
+    list-style: none;
+}
 html, body {
     position: relative;
     height: 100%;
@@ -182,7 +185,7 @@ body {
     border:1px solid #99682c;
 }
 .s3 div img{
-    width:80%;
+    width:77%;
     padding:0 10%;
     margin-top: 5px;
 }
@@ -214,11 +217,11 @@ body {
     right: 6%;
     font-size: 16px;
 }
-.s4 .left p{
+.s4 .left li{
     margin-bottom:23%;
 }
-.s4 .right p{
-    margin-bottom:12%;
+.s4 .right li{
+    margin-bottom:13%;
 }
 .s5 form{
     position: absolute;
