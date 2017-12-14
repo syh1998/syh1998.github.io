@@ -234,13 +234,6 @@ body {
     border:1px solid #c0873a;
     padding:5px;
 }
-.s5 .img2{
-    width: 70%;
-    bottom:22%;
-    position: absolute;
-    left: 50%;
-    margin-left: -35%;
-}
 @media (max-width: 320px) {
     .s5 .img2 {
          bottom:14%;
