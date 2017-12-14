@@ -185,7 +185,6 @@ body {
     width:80%;
     padding:0 10%;
     margin-top: 5px;
-    height:115px;
 }
 .s3 div img:nth-of-type(1){
     padding-top: 3%;
@@ -238,4 +237,7 @@ body {
     position: absolute;
     left: 50%;
     margin-left: -35%;
+}
+@media (min-width: 360px) {
+
 }
