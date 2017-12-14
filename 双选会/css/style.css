@@ -157,13 +157,23 @@ body {
     top:10%;
     position: absolute;
     line-height: 20px;
+    text-align:left;
+}
+.s2 p:nth-of-type(2){
+    top:16%;
+}
+.s2 p:nth-of-type(3){
+    top:22%;
+}
+.s2 p:nth-of-type(4){
+    top:28%;
 }
 .s2 div{
     position: absolute;
     width: 80%;
     left: 50%;
     margin-left: -40%;
-    top:42%;
+    top:45%;
 }
 .s2 div img{
     width: 100%;
@@ -202,4 +212,11 @@ body {
     margin-bottom:12px;
     border:1px solid #c0873a;
     padding:5px;
+}
+.s4 .img2{
+    width: 70%;
+    bottom:15%;
+    position: absolute;
+    left: 50%;
+    margin-left: -35%;
 }
