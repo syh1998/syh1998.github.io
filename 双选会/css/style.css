@@ -112,22 +112,17 @@ body {
     width: 25%;
     left: 15%;
 }
-.s1 img:nth-of-type(5){
-    top: 10%;
-    width:30%;
-    right:6%;
-}
 .s1 h5,.s1 p{
     position: absolute;
     color:#c0873a;
     letter-spacing:3px;
 }
 .s1 h5{
-    bottom: 25%;
+    bottom: 23%;
     left:35%;
 }
 .s1 p:nth-of-type(1){
-    bottom:18%;
+    bottom:16%;
     font-size:14px;
     left: 10%;
     padding: 0 3%;
@@ -156,7 +151,6 @@ body {
     padding: 5%;
     top:10%;
     position: absolute;
-    line-height: 20px;
     text-align:left;
 }
 .s2 p:nth-of-type(2){
@@ -173,7 +167,7 @@ body {
     width: 80%;
     left: 50%;
     margin-left: -40%;
-    top:45%;
+    top:46%;
 }
 .s2 div img{
     width: 100%;
