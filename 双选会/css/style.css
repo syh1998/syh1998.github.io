@@ -191,16 +191,16 @@ body {
 }
 .s3 .img3{
     position: absolute;
-    bottom:5%;
+    bottom:1%;
     width:88%;
     margin-left: -44%;
     left: 50%;
 }
 .s4 .img1{
     position: absolute;
-    top:15%;
-    width:35%;
-    left:28%;
+    top:18%;
+    width:30%;
+    left:31%;
 }
 .s4 .left{
     top:27%;
@@ -215,7 +215,7 @@ body {
     font-size: 16px;
 }
 .s4 .left p{
-    margin-bottom:23%;
+    margin-bottom:19%;
 }
 .s4 .right p{
     margin-bottom:9%;
@@ -233,7 +233,7 @@ body {
 }
 .s5 .img2{
     width: 70%;
-    bottom:15%;
+    bottom:13%;
     position: absolute;
     left: 50%;
     margin-left: -35%;
