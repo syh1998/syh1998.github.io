@@ -118,11 +118,11 @@ body {
     letter-spacing:3px;
 }
 .s1 h5{
-    bottom: 23%;
+    bottom: 25%;
     left:35%;
 }
 .s1 p:nth-of-type(1){
-    bottom:16%;
+    bottom:18%;
     font-size:14px;
     left: 10%;
     padding: 0 3%;
@@ -151,6 +151,7 @@ body {
     padding: 5%;
     top:10%;
     position: absolute;
+    line-height: 20px;
     text-align:left;
 }
 .s2 p:nth-of-type(2){
@@ -167,7 +168,7 @@ body {
     width: 80%;
     left: 50%;
     margin-left: -40%;
-    top:46%;
+    top:45%;
 }
 .s2 div img{
     width: 100%;
@@ -191,16 +192,16 @@ body {
 }
 .s3 .img3{
     position: absolute;
-    bottom:1%;
+    bottom:5%;
     width:88%;
     margin-left: -44%;
     left: 50%;
 }
 .s4 .img1{
     position: absolute;
-    top:18%;
-    width:30%;
-    left:31%;
+    top:15%;
+    width:35%;
+    left:28%;
 }
 .s4 .left{
     top:27%;
@@ -215,7 +216,7 @@ body {
     font-size: 16px;
 }
 .s4 .left p{
-    margin-bottom:19%;
+    margin-bottom:23%;
 }
 .s4 .right p{
     margin-bottom:9%;
@@ -233,7 +234,7 @@ body {
 }
 .s5 .img2{
     width: 70%;
-    bottom:13%;
+    bottom:15%;
     position: absolute;
     left: 50%;
     margin-left: -35%;
