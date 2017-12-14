@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+.swiper-button-next{
+    left: 50%;
+    right:auto;
+    top:auto;
+    bottom:0;
+    margin-left:-13.5px;
+    transform:rotate(-90deg);
+    width: 17px;
+    height: 35px;
+    background-size:contain;
+    animation: buttonnext 2s infinite;
+}
+@keyframes buttonnext {
+    0%{
+        bottom:0;
+        opacity: 1;
+    }
+    100%{
+        bottom:5%;
+        opacity: 0;
+    }
+}
+#mp3Btn{
+    position: absolute;
+    right:18px;
+    top: 20px;
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border: 4px solid #292929;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    transform: rotateZ(0deg);
+    animation: mp3key 4s;
+    /*一直执行*/
+    animation-iteration-count: infinite;
+    /*匀速执行*/
+    animation-timing-function:linear;
+    /*默认运行动画*/
+    animation-play-state:running;
+}
+
+@keyframes mp3key {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(1turn);
+    }
+}
+#mp3Btn img{
+    width:10px;
+}
+
+
+/*第一屏*/
+
+.s1,.s2,.s3,.s4{
+    background:url("../img/1.jpg");
+    height:100%;
+    position: relative;
+}
+.s1 img{
+    position: absolute;
+}
+.s1 img:nth-of-type(1){
+    top: 10%;
+    width: 20%;
+    left:40%;
+}
+.s1 img:nth-of-type(2){
+    top: 30%;
+    width: 20%;
+    left:40%;
+}
+.s1 img:nth-of-type(3){
+    top:50%;
+    width:20%;
+    left:40%;
+}
+.s1 img:nth-of-type(4) {
+    top: 56%;
+    width: 25%;
+    left: 15%;
+}
+.s1 img:nth-of-type(5){
+    top: 10%;
+    width:30%;
+    right:6%;
+}
+.s1 h5,.s1 p{
+    position: absolute;
+    color:#c0873a;
+    letter-spacing:3px;
+}
+.s1 h5{
+    bottom: 25%;
+    left:35%;
+}
+.s1 p:nth-of-type(1){
+    bottom:18%;
+    font-size:14px;
+    left: 10%;
+    padding: 0 3%;
+}
+.s1 p:nth-of-type(2){
+    bottom: 11%;
+    font-size:14px;
+    left:30%;
+    padding:0 3%;
+}
+.s2,.s3,.s4{
+    color:#c0873a;
+}
+.img{
+    top: 5%;
+    position: relative;
+    width:50%;
+}
+.s2 h4,.s3 h4,.s4 h4{
+    position: absolute;
+    left: 40%;
+    top: 5%;
+}
+.s2 p{
+    font-size: 14px;
+    padding: 5%;
+    top:10%;
+    position: absolute;
+    line-height: 20px;
+}
+.s2 div{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+    top:42%;
+}
+.s2 div img{
+    width: 100%;
+}
+.s3 .img1{
+    position: absolute;
+    top:15%;
+    width:35%;
+    left:28%;
+}
+.s3 .left{
+    top:32%;
+    position: absolute;
+    left:6%;
+    font-size: 16px;
+}
+.s3 .right{
+    top:32%;
+    position: absolute;
+    right: 6%;
+    font-size: 16px;
+}
+.s3 .left p{
+    margin-bottom:20%;
+}
+.s3 .right p{
+    margin-bottom:7%;
+}
+.s4 form{
+    position: absolute;
+    top:20%;
+}
+.s4 form input{
+    width:60%;
+    height:60px;
+    margin-bottom:12px;
+    border:1px solid #c0873a;
+    padding:5px;
+}
