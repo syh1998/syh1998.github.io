@@ -246,3 +246,8 @@ body {
          bottom:14%;
     }
 }
+@media (max-width: 320px) {
+    .s5 .img2 {
+        bottom:14%;
+    }
+}
