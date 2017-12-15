@@ -1055,5 +1055,55 @@ body {
     .main2 span:nth-of-type(7){
         left:150px;
     }
+    .main4 div:nth-of-type(1) img{
+        left: -40px;
+        top: 10px;
+    }
+    .main4 div:nth-of-type(2) img{
+        right:-90px;
+        top: 10px;
+    }
+    .main4 div:nth-of-type(3) img{
+        top:170px;
+    }
+    .main4 div:nth-of-type(4) img{
+        top: 170px;
+    }
+    .main4 div:nth-of-type(1) div img {
+        top:-165px;
+    }
+    .main4 div:nth-of-type(2) div img {
+        top:-165px;
+    }
+    .main4 div:nth-of-type(3) div img {
+        top:-23px;
+    }
+    .main4 div:nth-of-type(4) div img {
+        top:-23px;
+    }
+    .main4 div:nth-of-type(1) div p {
+        top: -98px;
+    }
+    .main4 div:nth-of-type(1) div span {
+        top: -75px;
+    }
+    .main4 div:nth-of-type(2) div p {
+        top: -98px;
+    }
+    .main4 div:nth-of-type(2) div span {
+        top: -75px;
+    }
+    .main4 div:nth-of-type(3) div p {
+        top:82px;
+    }
+    .main4 div:nth-of-type(3) div span {
+        top:104px;
+    }
+    .main4 div:nth-of-type(4) div p {
+        top: 82px;
+    }
+    .main4 div:nth-of-type(4) div span {
+        top: 104px;
+    }
 
 }
