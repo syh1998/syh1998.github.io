@@ -180,12 +180,12 @@
                 <img src="img/12.png" class="img">
                 <h4 class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s"
                     swiper-animate-delay="0.5s">马上参加</h4>
-                <form action="" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s"
+                <form  action="submitpage.htm"onsubmit="return validate_form(this);" method="post" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s"
                       swiper-animate-delay="2s">
                     <input type="text" placeholder="姓名">
-                    <input type="text" placeholder="电话">
+                    <input type="text" placeholder="电话" >
                     <input type="text" placeholder="所在公司">
-                    <input type="text" placeholder="邮箱">
+                    <input type="text" name="email" placeholder="邮箱">
                     <input type="submit" value="提交">
                 </form>
                 <img src="img/6.png" alt="" class="img3 ani" swiper-animate-effect="rotateIn"
@@ -207,5 +207,3 @@
 <script src="js/script.js"></script>
 </body>
 </html>
-
-
