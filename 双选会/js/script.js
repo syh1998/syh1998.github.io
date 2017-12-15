@@ -29,23 +29,22 @@ mp3Btn.onclick = function () {
     }
 };
 
-function validate_email(field,alerttxt)
-{
-    with (field)
-    {
-        apos=value.indexOf("@");
-        dotpos=value.lastIndexOf(".");
-        if (apos<1||dotpos-apos<2)
-        {alert(alerttxt);return false}
-        else {return true}
+function emailCheck () {
+    var emailStr=document.all.form1.email.value;
+    var emailPat=/^(.+)@(.+)$/;
+    var matchArray=emailStr.match(emailPat);
+    if (matchArray==null) {
+        alert("电子邮件地址必须包括 ( @ 和 . )");
+        return false;
     }
+    return true;
 }
 
-function validate_form(thisform)
-{
-    with (thisform)
-    {
-        if (validate_email(email,"Not a valid e-mail address!")==false)
-        {email.focus();return false}
-    }
+
+function checkPhone(){
+    var phone = document.getElementById('uid').value;
+    if(!(/^1[34578]\d{9}$/.test(phone))){
+        return document.getElementById('uidt').innerHTML = '请输入正确的手机号';
+        return false;
+    }    else{return document.getElementById('uidt').innerHTML = 'ok';}
 }
