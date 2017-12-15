@@ -155,6 +155,7 @@ body {
     top:10%;
     position: absolute;
     text-align:left;
+    margin-bottom: 5px;
 }
 .s2 p:nth-of-type(2){
     top:16%;
