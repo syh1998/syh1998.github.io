@@ -1017,6 +1017,10 @@ body {
     .footer img{
         height: 60px;
     }
+    .footer .ss1{
+         bottom:10%;
+         font-size:12px;
+     }
     @keyframes buttonnext {
         0%{
             bottom:0;
@@ -1031,7 +1035,7 @@ body {
         left:7%;
     }
     .main1 span {
-        bottom:16%;
+        bottom:12%;
     }
     .main2 span:nth-of-type(7){
         left:150px;
