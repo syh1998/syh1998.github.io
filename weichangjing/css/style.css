@@ -163,6 +163,7 @@ body {
 .footer div p{
     color:#117e7b;
     font-weight: bold;
+    font-size:14px;
 }
 .footer img{
     position:absolute;
@@ -246,6 +247,7 @@ body {
     position:absolute;
     width: 100%;
     left:0;
+    height: 380px;
 }
 .main1 div p{
     font-size:14px;
@@ -319,6 +321,7 @@ body {
     position: absolute;
     bottom:15%;
     width: 100%;
+    font-size:14px;
 }
 
 /*
