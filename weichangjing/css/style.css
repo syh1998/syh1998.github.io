@@ -796,7 +796,7 @@ body {
 
 @media (min-width:360px) {
     .main1 div p{
-        line-height: 20px;
+        line-height: 16px;
     }
     .footer img{
         height: 60px;
@@ -836,7 +836,7 @@ body {
 
 @media (min-width:412px) {
     .main1 div p{
-        line-height: 20px;
+        line-height:16px;
     }
     .footer img{
         height: 60px;
@@ -944,7 +944,7 @@ body {
 
 @media (min-width:420px) {
     .main1 div p{
-        line-height: 25px;
+        line-height: 16px;
     }
     .footer img{
         height: 60px;
