@@ -1052,6 +1052,25 @@ body {
     .main1 span {
         bottom:12%;
     }
+    .main2 span:nth-of-type(1){
+        top:150px;
+    }
+    .main2 span:nth-of-type(2){
+        top:150px;
+    }
+    .main2 span:nth-of-type(3){
+        top:270px;
+    }
+    .main2 span:nth-of-type(4){
+        top:270px;
+    }
+    .main2 span:nth-of-type(5){
+        top: 380px;
+    }
+    .main2 span:nth-of-type(6){
+        top: 380px;
+    }
+
     .main2 span:nth-of-type(7){
         left:150px;
     }
