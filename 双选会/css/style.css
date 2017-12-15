@@ -221,7 +221,7 @@ body {
 }
 .s5 form{
     position: absolute;
-    top:20%;
+    top:30%;
 }
 .s5 form input{
     width:60%;
@@ -229,6 +229,12 @@ body {
     margin-bottom:12px;
     border:1px solid #c0873a;
     padding:5px;
+}
+.s5 .img3{
+    position: absolute;
+    left:5%;
+    top:15%;
+    width: 30%;
 }
 @media (max-width: 320px) {
     .s5 .img2 {
