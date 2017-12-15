@@ -269,14 +269,16 @@ body {
     background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d));
     background: -webkit-linear-gradient(left, #00ecfc, #00fd9d);
     background: -o-linear-gradient(left, #00ecfc, #00fd9d);
-    border-radius:10px;
     width: 120px;
     height: 25px;
-    color:black;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 14px;
     font-weight: bold;
+    line-height: 25px;
     display: inline-block;
     position: absolute;
-    bottom:28%;
+    bottom: -10px;
     left: 50%;
     margin-left: -60px;
 }
