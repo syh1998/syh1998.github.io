@@ -236,24 +236,30 @@ body {
     font-size:14px;
     margin-top: 10px;
 }
+
+
+
+
 .main1 div{
     position: absolute;
     top: 25%;
     width: 80%;
     left:50%;
     margin-left: -40%;
+    height: 55%;
 }
 .main1 img{
     position:absolute;
     width: 100%;
     left:0;
-    height: 315px;
+    height: 100%;
 }
 .main1 div p{
     font-size:14px;
    text-align: left;
-    line-height:25px;
+    line-height:1.5em;
     padding: 0 10%;
+    margin-bottom: 10px;
 }
 .main1 div p:nth-of-type(1){
     padding-top:20px;
@@ -263,14 +269,16 @@ body {
     background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d));
     background: -webkit-linear-gradient(left, #00ecfc, #00fd9d);
     background: -o-linear-gradient(left, #00ecfc, #00fd9d);
-    border-radius:10px;
     width: 120px;
     height: 25px;
-    color:black;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 14px;
     font-weight: bold;
+    line-height: 25px;
     display: inline-block;
     position: absolute;
-    bottom:26%;
+    bottom: -10px;
     left: 50%;
     margin-left: -60px;
 }
